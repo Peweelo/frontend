@@ -1,0 +1,436 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1em 2em;
+  border-radius: 25px;
+  background-color: hsl(12, 88%, 59%);
+  border-color: transparent;
+  box-shadow: 0 5px 15px hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  transition: color 0.3s;
+}
+.button:hover {
+  color: hsl(228, 39%, 23%);
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.test {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+html {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 62.5%;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4em;
+}
+.nav-items {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-items-item {
+  cursor: pointer;
+  color: hsl(228, 39%, 23%);
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+.nav-items-item:hover {
+  color: hsl(227, 12%, 61%);
+}
+.nav-items.active {
+  display: none;
+}
+.nav-button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1em 2em;
+  border-radius: 25px;
+  background-color: hsl(12, 88%, 59%);
+  border-color: transparent;
+  box-shadow: 0 5px 15px hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  transition: color 0.3s;
+}
+.nav-button:hover {
+  color: hsl(228, 39%, 23%);
+}
+.nav-hamburger {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 0;
+  }
+  .nav-logo {
+    padding: 0 0 0 2em;
+  }
+  .nav-items {
+    position: absolute;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3em 0;
+    background-color: white;
+    right: 10%;
+    top: 100%;
+  }
+  .nav-items-item {
+    cursor: pointer;
+    color: hsl(228, 39%, 23%);
+    font-size: 1.6rem;
+    transition: color 0.3s;
+    font-weight: bold;
+  }
+  .nav-items-item:hover {
+    color: hsl(227, 12%, 61%);
+  }
+  .nav-items.active {
+    display: none;
+  }
+  .nav-button {
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 1em 2em;
+    border-radius: 25px;
+    background-color: hsl(12, 88%, 59%);
+    border-color: transparent;
+    box-shadow: 0 5px 15px hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+    transition: color 0.3s;
+    display: none;
+  }
+  .nav-button:hover {
+    color: hsl(228, 39%, 23%);
+  }
+  .nav-hamburger {
+    padding: 0 2em 0 0;
+    display: block;
+  }
+}
+.main {
+  height: 40vh;
+  padding-top: 20em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-box {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main-box-header {
+  line-height: 60px;
+  color: hsl(228, 39%, 23%);
+  font-size: 5rem;
+}
+.main-box-paragraph {
+  width: 75%;
+  font-size: 1.4rem;
+  color: hsl(227, 12%, 61%);
+  line-height: 25px;
+}
+.main-box-button {
+  width: 28%;
+}
+
+.manage {
+  margin-top: 15em;
+}
+.manage-container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.manage-container-left {
+  height: 100%;
+  width: 35%;
+}
+.manage-container-left-header {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: hsl(228, 39%, 23%);
+  padding-bottom: 1.5em;
+}
+.manage-container-left-paragraph {
+  font-size: 1.4rem;
+  color: hsl(227, 12%, 61%);
+  line-height: 25px;
+}
+.manage-container-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.manage-container-right-box-title {
+  position: relative;
+  color: hsl(228, 39%, 23%);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+.manage-container-right-box-paragraph {
+  font-size: 1.6rem;
+  color: hsl(227, 12%, 61%);
+  line-height: 25px;
+}
+
+.slider {
+  margin-top: 7%;
+  height: 40vh;
+  width: 100%;
+  text-align: center;
+  font-size: 3.6rem;
+  color: hsl(228, 39%, 23%);
+}
+.slider-header {
+  padding-bottom: 3em;
+}
+.slider-opinions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 3em;
+}
+.slider-opinions-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  width: 25%;
+}
+.slider-opinions-box-img {
+  background-image: url("/img/avatar-anisha.png");
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-repeat: cover;
+}
+.slider-opinions-box-name {
+  padding: 2em 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: hsl(228, 39%, 23%);
+}
+.slider-opinions-box-paragraph {
+  font-size: 1.4rem;
+  color: hsl(227, 12%, 61%);
+  line-height: 25px;
+}
+
+.contact {
+  height: 50vh;
+  padding-top: 15%;
+}
+.contact-white {
+  height: 20%;
+  background-color: white;
+}
+.contact-orange {
+  height: 40%;
+  background-color: hsl(12, 88%, 59%);
+}
+.contact-orange-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-orange-container p {
+  width: 30%;
+  color: hsl(0, 0%, 98%);
+  font-size: 3rem;
+}
+.contact-orange-container button {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(12, 88%, 59%);
+  font-weight: bold;
+}
+.contact-black {
+  height: 40%;
+  background-color: hsl(233, 12%, 13%);
+}
+.contact-black-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-black-container-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 70%;
+  color: hsl(227, 12%, 61%);
+  font-size: 1.4rem;
+}
+.contact-black-container-box.three {
+  height: 50%;
+}
+.contact-black-container-box.four {
+  display: flex;
+  flex-direction: column;
+}
+.contact-black-container-box-input {
+  width: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.contact-black-container-box-input input {
+  height: 3.5em;
+  width: 60%;
+  border-radius: 45px;
+  border-color: transparent;
+  padding-left: 2em;
+}
+.contact-black-container-box-input button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1em 2em;
+  border-radius: 45px;
+  background-color: hsl(12, 88%, 59%);
+  border-color: transparent;
+  color: hsl(0, 0%, 98%);
+  transition: color 0.3s;
+}
+.contact-black-container-box-input button:hover {
+  color: hsl(228, 39%, 23%);
+}/*# sourceMappingURL=main.css.map */
